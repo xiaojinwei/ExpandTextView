@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cj.chenj.expandtextview.MainActivity">
+
+    <com.cj.chenj.expandtextview.ExpandTextView
+        android:id="@+id/details_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#fff"
+        app:descText="http://blog.csdn.net/cj_286/article/details/53021959。中间的圆形头像和光环波形讲解请看:http://blog.csdn.net/cj_286/article/details/52839036。周围的气泡布局，因为的布局RatioLayout是继承自ViewGroup，所以布局layout就可以根据自己的需求来布局其子view，view.layout(int l,int t,int r,int b);用于布局子view在父ViewGroup中的位置（相对于父容器），所以在RatioLayout中计算所有子view的left，top，right，bottom。那么头像的周围的气泡view是如何计算它的left，top，right，bottom的呢，这些气泡view是坐落在头像外围的圆环上，只要知道这个圆环的半径，然后再根据气泡的个数，计算每个气泡之间的角度，半径加角度就可以计算每个气泡坐落的位置。"
+        app:descColor="#000"
+        app:descSize="16"
+        app:descZoomRows="2"
+        app:expandTextColor="#f00"
+        app:expandTextSize="16"
+        app:expandTextClose="收缩"
+        app:expandTextCloseDrawable="@mipmap/close"
+        app:expandTextOpen="展开"
+        app:expandTextOpenDrawable="@mipmap/open"
+        android:visibility="visible"
+        >
+    </com.cj.chenj.expandtextview.ExpandTextView>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cj_286"
+        android:layout_below="@id/details_desc"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

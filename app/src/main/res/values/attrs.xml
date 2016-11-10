@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandTextView">
+        <attr name="descZoomRows" format="integer" /><!-- 完全显示的行数 实际为descZoomRows + 1行 -->
+        <attr name="descText" format="string" /><!-- 显示文本 -->
+        <attr name="descSize" format="float" /><!-- 显示文本的字体大小 -->
+        <attr name="descColor" format="reference|color" /><!-- 显示文本的颜色 -->
+        <attr name="expandTextOpen" format="string" /><!-- 设置展开文本 -->
+        <attr name="expandTextClose" format="string" /><!-- 设置收缩文本 -->
+        <attr name="expandTextOpenDrawable" format="reference" /><!-- 设置展开文本右边的图标 -->
+        <attr name="expandTextCloseDrawable" format="reference" /><!-- 设置收缩文本右边的图标 -->
+        <attr name="expandTextColor" format="reference|color" /><!-- 展开/收缩的文本颜色 -->
+        <attr name="expandTextSize" format="float" /><!-- 展开/收缩的文本大小 -->
+    </declare-styleable>
+</resources>
